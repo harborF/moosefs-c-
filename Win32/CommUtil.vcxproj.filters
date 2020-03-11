@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\CommUtil\cfg.cpp" />
+    <ClCompile Include="..\CommUtil\charts.cpp" />
+    <ClCompile Include="..\CommUtil\crc.cpp" />
+    <ClCompile Include="..\CommUtil\md5.cpp" />
+    <ClCompile Include="..\CommUtil\pcqueue.cpp" />
+    <ClCompile Include="..\CommUtil\random.cpp" />
+    <ClCompile Include="..\CommUtil\sockets.cpp" />
+    <ClCompile Include="..\CommUtil\strerr.cpp" />
+    <ClCompile Include="..\CommUtil\DataPack.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CommUtil\cfg.h" />
+    <ClInclude Include="..\CommUtil\charts.h" />
+    <ClInclude Include="..\CommUtil\crc.h" />
+    <ClInclude Include="..\CommUtil\hashfn.h" />
+    <ClInclude Include="..\CommUtil\massert.h" />
+    <ClInclude Include="..\CommUtil\md5.h" />
+    <ClInclude Include="..\CommUtil\median.h" />
+    <ClInclude Include="..\CommUtil\pcqueue.h" />
+    <ClInclude Include="..\CommUtil\random.h" />
+    <ClInclude Include="..\CommUtil\slogger.h" />
+    <ClInclude Include="..\CommUtil\sockets.h" />
+    <ClInclude Include="..\CommUtil\strerr.h" />
+    <ClInclude Include="..\CommUtil\config.h" />
+    <ClInclude Include="..\CommUtil\DataPack.h" />
+    <ClInclude Include="..\CommUtil\StatusDef.h" />
+    <ClInclude Include="..\CommUtil\CmdDefine.h" />
+  </ItemGroup>
+</Project>

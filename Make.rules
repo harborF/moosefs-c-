@@ -1,0 +1,19 @@
+LIBEVENT_LIB=-L/usr/local/iuni_app/lib -levent -levent_core -levent_pthreads
+
+FUSE_INCLUDE=-I/usr/local/include/fuse
+FUSE_LIB=-L/usr/local/lib -lfuse
+
+LOG4CXX_INCLUDE=-I/usr/local/log4cxx/include
+LOG4CXX_LIB=-L/usr/local/log4cxx/lib -llog4cxx
+
+COMMUTIL_INCLUDE=-I../CommUtil 
+
+CC=g++
+AR=ar
+RANLIB=ranlib
+FLAGS=-Wall -Werror -g -O2 -DTRACE -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -D__STDC_CONSTANT_MACROS
+INCLUDE=-I./ -I../ -I/usr/include
+INCLUDE+=$(COMMUTIL_INCLUDE)
+BINDIR=../bin/
+LIBDIR=../libs/
+

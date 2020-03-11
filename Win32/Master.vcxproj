@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{26B9CA9D-518A-4D2F-A307-C526B65E922A}</ProjectGuid>
+    <RootNamespace>NewMfs</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)CommUtil;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Master\changelog.cpp" />
+    <ClCompile Include="..\Master\ChartsData.cpp" />
+    <ClCompile Include="..\Master\ChunkConn.cpp" />
+    <ClCompile Include="..\Master\ChunkGoal.cpp" />
+    <ClCompile Include="..\Master\ChunkMgr.cpp" />
+    <ClCompile Include="..\Master\ChunkObj.cpp" />
+    <ClCompile Include="..\Master\ChunkJob.cpp" />
+    <ClCompile Include="..\Master\ClientConn.cpp" />
+    <ClCompile Include="..\Master\ClientFuseOpr.cpp" />
+    <ClCompile Include="..\Master\ClientSession.cpp" />
+    <ClCompile Include="..\Master\DCacheMgr.cpp" />
+    <ClCompile Include="..\Master\exports.cpp" />
+    <ClCompile Include="..\Master\FileIDMgr.cpp" />
+    <ClCompile Include="..\Master\FileSysMgr.cpp" />
+    <ClCompile Include="..\Master\FileSysOpr.cpp" />
+    <ClCompile Include="..\Master\FsEdge.cpp" />
+    <ClCompile Include="..\Master\FsNode.cpp" />
+    <ClCompile Include="..\Master\FsQuota.cpp" />
+    <ClCompile Include="..\Master\FsXAttr.cpp" />
+    <ClCompile Include="..\Master\itree.cpp" />
+    <ClCompile Include="..\Master\ClientCtrl.cpp" />
+    <ClCompile Include="..\Master\ChunkCtrl.cpp" />
+    <ClCompile Include="..\Master\MetaLoggerCtrl.cpp" />
+    <ClCompile Include="..\Master\MetaLoggerConn.cpp" />
+    <ClCompile Include="..\Master\mfsFactory.cpp" />
+    <ClCompile Include="..\Master\topology.cpp" />
+    <ClCompile Include="..\SvrCore\ServerCore.cpp" />
+    <ClCompile Include="..\SvrCore\ServerLock.cpp" />
+    <ClCompile Include="..\SvrCore\ServerMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Master\changelog.h" />
+    <ClInclude Include="..\Master\ChartsData.h" />
+    <ClInclude Include="..\Master\ChunkConn.h" />
+    <ClInclude Include="..\Master\ChunkMgr.h" />
+    <ClInclude Include="..\Master\ChunkObj.h" />
+    <ClInclude Include="..\Master\ChunkJob.h" />
+    <ClInclude Include="..\Master\ClientConn.h" />
+    <ClInclude Include="..\Master\DCacheMgr.h" />
+    <ClInclude Include="..\Master\exports.h" />
+    <ClInclude Include="..\Master\FileIDMgr.h" />
+    <ClInclude Include="..\Master\FileSysMgr.h" />
+    <ClInclude Include="..\Master\FileSysOpr.h" />
+    <ClInclude Include="..\Master\FsEdge.h" />
+    <ClInclude Include="..\Master\FsNode.h" />
+    <ClInclude Include="..\Master\FsQuota.h" />
+    <ClInclude Include="..\Master\FsXAttr.h" />
+    <ClInclude Include="..\Master\ServerInit.h" />
+    <ClInclude Include="..\Master\itree.h" />
+    <ClInclude Include="..\Master\ClientCtrl.h" />
+    <ClInclude Include="..\Master\ChunkCtrl.h" />
+    <ClInclude Include="..\Master\MetaLoggerCtrl.h" />
+    <ClInclude Include="..\Master\MetaLoggerConn.h" />
+    <ClInclude Include="..\Master\mfsFactory.h" />
+    <ClInclude Include="..\Master\topology.h" />
+    <ClInclude Include="..\SvrCore\ServerCore.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

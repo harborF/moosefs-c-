@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Master\changelog.cpp" />
+    <ClCompile Include="..\Master\exports.cpp" />
+    <ClCompile Include="..\Master\itree.cpp" />
+    <ClCompile Include="..\Master\topology.cpp" />
+    <ClCompile Include="..\Master\mfsFactory.cpp" />
+    <ClCompile Include="..\Master\ClientFuseOpr.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\ClientSession.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\ClientConn.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\ChunkConn.cpp">
+      <Filter>chunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\MetaLoggerConn.cpp">
+      <Filter>MetaLogger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\ChunkMgr.cpp">
+      <Filter>ChunkSys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\ChunkGoal.cpp">
+      <Filter>ChunkSys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\ChunkObj.cpp">
+      <Filter>ChunkSys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\ChunkJob.cpp">
+      <Filter>ChunkSys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\FsNode.cpp">
+      <Filter>FileSys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\FsEdge.cpp">
+      <Filter>FileSys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\FsQuota.cpp">
+      <Filter>FileSys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\FsXAttr.cpp">
+      <Filter>FileSys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\FileSysMgr.cpp">
+      <Filter>FileSys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\FileIDMgr.cpp">
+      <Filter>FileSys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\FileSysOpr.cpp">
+      <Filter>FileSys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\ChunkCtrl.cpp">
+      <Filter>chunk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\ClientCtrl.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\MetaLoggerCtrl.cpp">
+      <Filter>MetaLogger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\DCacheMgr.cpp" />
+    <ClCompile Include="..\SvrCore\ServerCore.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SvrCore\ServerLock.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SvrCore\ServerMain.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Master\ChartsData.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Master\changelog.h" />
+    <ClInclude Include="..\Master\exports.h" />
+    <ClInclude Include="..\Master\itree.h" />
+    <ClInclude Include="..\Master\topology.h" />
+    <ClInclude Include="..\Master\mfsFactory.h" />
+    <ClInclude Include="..\Master\ClientConn.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\ChunkConn.h">
+      <Filter>chunk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\MetaLoggerConn.h">
+      <Filter>MetaLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\ChunkMgr.h">
+      <Filter>ChunkSys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\ChunkObj.h">
+      <Filter>ChunkSys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\ChunkJob.h">
+      <Filter>ChunkSys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\FsNode.h">
+      <Filter>FileSys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\FsEdge.h">
+      <Filter>FileSys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\FsQuota.h">
+      <Filter>FileSys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\FsXAttr.h">
+      <Filter>FileSys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\FileSysMgr.h">
+      <Filter>FileSys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\FileIDMgr.h">
+      <Filter>FileSys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\FileSysOpr.h">
+      <Filter>FileSys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\ServerInit.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\ChunkCtrl.h">
+      <Filter>chunk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\ClientCtrl.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\MetaLoggerCtrl.h">
+      <Filter>MetaLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\DCacheMgr.h" />
+    <ClInclude Include="..\SvrCore\ServerCore.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Master\ChartsData.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="client">
+      <UniqueIdentifier>{25f24653-7601-40cb-b509-d130c5a5cff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chunk">
+      <UniqueIdentifier>{4954a249-3b01-44b3-a20c-b721c4fbc727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MetaLogger">
+      <UniqueIdentifier>{c4b28645-761e-4ab4-90ab-9d741e85283b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChunkSys">
+      <UniqueIdentifier>{61d3086f-2479-4ec4-8244-3196c255f1b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileSys">
+      <UniqueIdentifier>{2be5f3c1-5a73-4da0-a86f-e017460e95e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{bb26153b-fa35-409d-b2d6-a96094706939}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Mount\main.cpp" />
+    <ClCompile Include="..\Mount\mfs_fuse.cpp" />
+    <ClCompile Include="..\Mount\mfs_meta_fuse.cpp" />
+    <ClCompile Include="..\Mount\oplog.cpp" />
+    <ClCompile Include="..\Mount\MasterComm.cpp" />
+    <ClCompile Include="..\Mount\MasterProxy.cpp" />
+    <ClCompile Include="..\Mount\ClientComm.cpp" />
+    <ClCompile Include="..\Mount\ReadDataOpr.cpp">
+      <Filter>RW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Mount\ChunkLocCache.cpp">
+      <Filter>Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Mount\DirAttrCache.cpp">
+      <Filter>Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Mount\SymlinkCache.cpp">
+      <Filter>Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Mount\WriteDataOpr.cpp">
+      <Filter>RW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Mount\stats.cpp">
+      <Filter>Stats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Mount\CsOpStat.cpp">
+      <Filter>Stats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Mount\ChunkFileCache.cpp">
+      <Filter>Cache</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Mount\mfs_fuse.h" />
+    <ClInclude Include="..\Mount\mfs_meta_fuse.h" />
+    <ClInclude Include="..\Mount\oplog.h" />
+    <ClInclude Include="..\Mount\MasterComm.h" />
+    <ClInclude Include="..\Mount\MasterProxy.h" />
+    <ClInclude Include="..\Mount\ClientComm.h" />
+    <ClInclude Include="..\Mount\ReadWriteOpr.h">
+      <Filter>RW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Mount\ChunkLocCache.h">
+      <Filter>Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Mount\DirAttrCache.h">
+      <Filter>Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Mount\SymlinkCache.h">
+      <Filter>Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Mount\stats.h">
+      <Filter>Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Mount\CsOpStat.h">
+      <Filter>Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Mount\ChunkFileCache.h">
+      <Filter>Cache</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="RW">
+      <UniqueIdentifier>{46cf72a8-9ec2-4695-a07d-73136bc2e792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cache">
+      <UniqueIdentifier>{5ce20380-b57d-45c8-9440-0fcde4252fbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stats">
+      <UniqueIdentifier>{f3425f22-aa9a-4dcf-b54c-313b2cd04890}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
